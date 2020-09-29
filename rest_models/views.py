@@ -1,3 +1,4 @@
+from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
@@ -5,7 +6,6 @@ from rest_framework.response import Response
 from .serializers import TaskSerializer
 from .models import Task
 from rest_framework import status
-
 @api_view(['GET'])
 def indexofrest(request):
     return Response('Working')

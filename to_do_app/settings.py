@@ -54,10 +54,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'to_do_app.urls'
 
+# print(BASE_DIR)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\\Users\\BHAVASAGAR\\to_do_app\\things\\templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
